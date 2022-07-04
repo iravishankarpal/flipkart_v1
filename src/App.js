@@ -4,6 +4,7 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Footer from "./Pages/Footer";
 import Header from "./Pages/Header";
 import Home from "./Pages/Home";
+import Cart from "./Pages/Cart";
 function App() {
   // const dispatch = useDispatch();
   // const state = useSelector((state) => state.counter);
@@ -13,7 +14,7 @@ function App() {
         <Header></Header>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
-          <Route path="/cart" element={<Home />}></Route>
+          <Route path="/cart" element={<Cart />}></Route>
         </Routes>
         <Footer></Footer>
       </HashRouter>
